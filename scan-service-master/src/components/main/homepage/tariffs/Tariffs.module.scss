@@ -1,0 +1,25 @@
+@use '../../../../styles/mixins';
+@use '../../../../styles/shared';
+@use '../../../../styles/vars' as * ;
+
+.tariffs {
+    padding: 50px 0 118px;
+}
+
+.title {
+    margin-bottom: 70px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (max-width: 375px) {
+    .tariffs {
+        padding: 20px 0 40px;
+    }
+}

@@ -1,0 +1,31 @@
+
+// .block {
+//     padding: 17px 0;
+// }
+
+.resultCard {
+    text-align: center;
+    border-right: 2px solid rgba(148, 148, 148, 0.5);
+}
+
+.period {
+    margin: 0 20px 29px;
+}
+
+.total {
+    margin-bottom: 23px;
+}
+
+@media (max-width: 375px) {
+    .resultCard {
+        border-right: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    .period {
+        margin: 0;
+    }
+    .total {
+        margin: 0;
+    }
+}

@@ -1,0 +1,11 @@
+@use '../../../styles/mixins';
+
+h2 {
+    @include mixins.font(45px, 54px);
+}
+
+@media (max-width: 375px) {
+    h2 {
+        @include mixins.font(28px, 34px);
+    }
+}

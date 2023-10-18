@@ -1,0 +1,57 @@
+@use '../../../styles/vars' as * ;
+@use '../../../styles/mixins';
+@use '../../../styles/shared';
+
+.profile {
+    letter-spacing: normal;
+    @extend %d-f;
+    max-width: 175px + 128px + 111px;
+    width: 100%;
+}
+
+.loader {
+    width: 24px;
+    height: 24px;
+}
+
+.user {
+    display: flex;
+    column-gap: 4px;
+}
+
+.info {
+    text-align: end ;
+}
+
+.name {
+    opacity: 0.7;
+}
+
+.btn {
+    @extend %font-10-12-gray;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.profileBurger {
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .profile {
+        display: none;
+    }
+    .profileBurger {
+        display: block;
+    }
+    .name {
+        opacity: 1;
+    }
+    .btn {
+        color: #fff;
+        opacity: 0.7;
+    }
+}

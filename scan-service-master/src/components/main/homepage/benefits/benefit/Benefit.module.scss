@@ -1,0 +1,24 @@
+@use '../../../../../styles/shared';
+@use '../../../../../styles/mixins';
+
+.slide {
+    @extend %card;
+    width: 400px;
+    height: 225px;
+    padding: 30px 20px;
+    margin: 25px 0;
+}
+
+.img {
+    margin-bottom: 19px;
+}
+
+.text {
+    @include mixins.font(18px, 22px);
+}
+
+@media (max-width: 375px) {
+    .slide {
+        width: 298px;
+    }
+}
